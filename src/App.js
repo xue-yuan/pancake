@@ -19,7 +19,6 @@ function Todo({ addTodo }) {
         className="input is-rounded"
         value={todo}
         onChange={(e) => setTodo(e.target.value)}
-        maxLength="25"
         autoFocus
       />
     </form>
@@ -53,16 +52,18 @@ function App() {
           <div className="column is-6 is-offset-3 has-text-centered">
             <h1 className="is-size-3 my-5">✅ Todo List</h1>
             <Todo addTodo={addTodo} />
-            {todos.map((todo, index) => (
-              <TodoList
-                key={index}
-                index={index}
-                todo={todo}
-                toggleTodo={toggleTodo}
-                removeTodo={removeTodo}
-              />
-            ))}
           </div>
+        </div>
+        <div className="columns is-multiline">
+          {todos.map((todo, index) => (
+            <TodoList
+              key={index}
+              index={index}
+              todo={todo}
+              toggleTodo={toggleTodo}
+              removeTodo={removeTodo}
+            />
+          ))}
         </div>
       </div>
     </div>
