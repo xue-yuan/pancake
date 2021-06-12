@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import TodoList from "./components/TodoList";
+import storage from './storage/api';
 
 function Todo({ addTodo }) {
   const [todo, setTodo] = React.useState("");
@@ -26,23 +27,26 @@ function Todo({ addTodo }) {
 }
 
 function App() {
-  const [todos, setTodos] = React.useState([]);
+  const [todos, setTodos] = React.useState(storage.get());
 
   const addTodo = (text) => {
-    const newTodos = [...todos, { text }];
+    const newTodos = [...todos, { text, done: false }];
     setTodos(newTodos);
+    storage.set(newTodos);
   };
 
   const toggleTodo = (index) => {
     const newTodos = [...todos];
-    newTodos[index].isCompleted = !newTodos[index].isCompleted ;
+    newTodos[index].done = !newTodos[index].done;
     setTodos(newTodos);
+    storage.set(newTodos);
   };
 
   const removeTodo = (index) => {
     const newTodos = [...todos];
     newTodos.splice(index, 1);
     setTodos(newTodos);
+    storage.set(newTodos);
   };
 
   return (
