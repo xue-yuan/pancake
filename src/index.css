@@ -14,3 +14,7 @@ body {
  -moz-user-select: none;
  -ms-user-select: none;
 }
+
+.newline {
+  word-wrap: break-word
+}
