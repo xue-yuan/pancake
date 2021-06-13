@@ -71,8 +71,6 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ## Todo
 
-- RWD
-- edit list
-- database
-  - json
-  - sqlite
+- ~~use localstorage~~
+- ~~use tailwindcss~~
+- edit item
