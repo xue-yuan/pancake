@@ -14,10 +14,10 @@ function Todo({ addTodo }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="" onSubmit={handleSubmit}>
       <input
         type="text"
-        className="input is-rounded"
+        className="form-input mx-auto text-2xl text-gray-700 mt-10 block max-w-2xl w-full border-0 border-b-2 border-gray-200 focus:ring-0 focus:border-black"
         value={todo}
         onChange={(e) => setTodo(e.target.value)}
         autoFocus
@@ -51,14 +51,12 @@ function App() {
 
   return (
     <div className="app">
-      <div className="container">
-        <div className="columns is-mobile mt-6">
-          <div className="column is-6 is-offset-3 has-text-centered">
-            <h1 className="is-size-3 my-5">✅ Todo List</h1>
-            <Todo addTodo={addTodo} />
-          </div>
+      <div className="container mx-auto py-20">
+        <div className="text-center">
+          <h1 className="text-5xl font-bold text-gray-700">Todo <span className="bg-gray-700 text-white rounded-md px-3">List</span></h1>
+          <Todo addTodo={addTodo} />
         </div>
-        <div className="columns is-multiline">
+        <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 text-center sm:px-10">
           {todos.map((todo, index) => (
             <TodoList
               key={index}

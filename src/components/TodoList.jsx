@@ -3,19 +3,17 @@ import { Component } from "react";
 class TodoList extends Component {
   render() {
     return (
-      <div className="column is-4">
-        <div className={"card my-4 " + (this.props.todo.done ? 'has-background-success' : '')}>
-          <div className={"card-content disable-select " + (this.props.todo.done ? ' has-text-white' : 'has-text-success ')}>
-            <div className="columns">
-              <div className="column is-11 has-text-left newline" onClick={() => this.props.toggleTodo(this.props.index)}>
-                <span className={"is-size-3 mr-2 " + (this.props.todo.done ? '' : 'has-text-grey-light')}>#</span>
-                <p className="is-size-5">{this.props.todo.text}</p>
-              </div>
-              <div className="column is-1 has-text-right">
-                <i className={"material-icons md-18 mt-3 " + (this.props.todo.done ? 'has-text-white' : 'has-text-danger')} onClick={() => this.props.removeTodo(this.props.index)}>close</i>
-              </div>
+      <div className={"my-2 shadow-md relative sm:rounded-3xl sm:m-5 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 " + (this.props.todo.done ? "bg-yellow-300 text-white" : "bg-white text-gray-600")}>
+        <div className="py-5 text-left sm:px-10 sm:py-16" onClick={() => this.props.toggleTodo(this.props.index)}>
+          <div className="disable-select">
+            <div className="newline">
+              <span className="text-3xl font-bold"># </span>
+              <code className="text-xl">{this.props.todo.text}</code>
             </div>
           </div>
+        </div>
+        <div class="absolute inset-x-0 bottom-0 opacity-0 hover:opacity-100 hover:bg-red-400 transition duration-300 transform sm:rounded-b-3xl text-white" onClick={() => this.props.removeTodo(this.props.index)}>
+          <i className="material-icons text-lg text-white">delete</i>
         </div>
       </div>
     );
