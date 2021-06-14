@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/pancake/static/css/main.24a98b1c.chunk.css",
-    "main.js": "/pancake/static/js/main.8467e612.chunk.js",
-    "main.js.map": "/pancake/static/js/main.8467e612.chunk.js.map",
+    "main.css": "/pancake/static/css/main.9787d918.chunk.css",
+    "main.js": "/pancake/static/js/main.5bcca657.chunk.js",
+    "main.js.map": "/pancake/static/js/main.5bcca657.chunk.js.map",
     "runtime-main.js": "/pancake/static/js/runtime-main.75b6c536.js",
     "runtime-main.js.map": "/pancake/static/js/runtime-main.75b6c536.js.map",
     "static/js/2.39798743.chunk.js": "/pancake/static/js/2.39798743.chunk.js",
@@ -10,13 +10,13 @@
     "static/js/3.ca548ca5.chunk.js": "/pancake/static/js/3.ca548ca5.chunk.js",
     "static/js/3.ca548ca5.chunk.js.map": "/pancake/static/js/3.ca548ca5.chunk.js.map",
     "index.html": "/pancake/index.html",
-    "static/css/main.24a98b1c.chunk.css.map": "/pancake/static/css/main.24a98b1c.chunk.css.map",
+    "static/css/main.9787d918.chunk.css.map": "/pancake/static/css/main.9787d918.chunk.css.map",
     "static/js/2.39798743.chunk.js.LICENSE.txt": "/pancake/static/js/2.39798743.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.75b6c536.js",
     "static/js/2.39798743.chunk.js",
-    "static/css/main.24a98b1c.chunk.css",
-    "static/js/main.8467e612.chunk.js"
+    "static/css/main.9787d918.chunk.css",
+    "static/js/main.5bcca657.chunk.js"
   ]
 }
