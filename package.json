@@ -1,7 +1,7 @@
 {
   "name": "pancake",
   "version": "1.0.0",
-  "homepage": "https://xue-yuan.github.io/todolist",
+  "homepage": "https://xue-yuan.github.io/pancake",
   "private": true,
   "dependencies": {
     "@craco/craco": "^6.1.2",
