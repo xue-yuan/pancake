@@ -3,8 +3,8 @@ import { Component } from "react";
 class TodoList extends Component {
   render() {
     return (
-      <div className={"my-2 shadow-md relative sm:rounded-3xl sm:m-5 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 " + (this.props.todo.done ? "bg-yellow-300 text-white" : "bg-white text-gray-600")}>
-        <div className="py-5 text-left sm:px-10 sm:py-16" onClick={() => this.props.toggleTodo(this.props.index)}>
+      <div className={"m-3 shadow-md relative rounded-3xl sm:m-5 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 " + (this.props.todo.done ? "bg-yellow-300 text-white" : "bg-white text-gray-600")}>
+        <div className="px-5 py-16 text-left sm:px-10 sm:py-16" onDoubleClick={() => this.props.toggleTodo(this.props.index)}>
           <div className="disable-select">
             <div className="newline">
               <span className="text-3xl font-bold"># </span>
