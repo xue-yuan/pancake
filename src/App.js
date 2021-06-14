@@ -53,7 +53,7 @@ function App() {
     <div className="app">
       <div className="container mx-auto py-20">
         <div className="text-center">
-          <h1 className="text-5xl font-bold text-gray-700">Todo <span className="bg-gray-700 text-white rounded-md px-3">List</span></h1>
+          <h1 className="text-5xl font-bold text-gray-700"><span className="pr-1">Pan</span><span className="bg-gray-700 text-white rounded-md px-2">cake</span></h1>
           <Todo addTodo={addTodo} />
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-2 text-center sm:px-10">
