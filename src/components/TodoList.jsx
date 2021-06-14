@@ -12,7 +12,7 @@ class TodoList extends Component {
             </div>
           </div>
         </div>
-        <div class="absolute inset-x-0 bottom-0 opacity-0 hover:opacity-100 hover:bg-red-400 transition duration-300 transform sm:rounded-b-3xl text-white" onClick={() => this.props.removeTodo(this.props.index)}>
+        <div className="absolute inset-x-0 bottom-0 opacity-0 hover:opacity-100 hover:bg-red-400 transition duration-300 transform sm:rounded-b-3xl text-white" onClick={() => this.props.removeTodo(this.props.index)}>
           <i className="material-icons text-lg text-white">delete</i>
         </div>
       </div>
